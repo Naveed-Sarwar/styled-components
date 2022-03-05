@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
-import { Link as LinkR} from "react-router-dom";
-import {Link as LinkS} from "react-scroll";
+import { Link as LinkR } from "react-router-dom";
+import { Link as LinkS } from "react-scroll";
 
 export const SliderContainer = styled.aside`
 position: fixed;
@@ -16,10 +16,11 @@ left: 0;
 transition: 0.3s ease-in-out;
 opacity: ${({ isOpen }) => (isOpen ? "100" : "0")};
 top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+
 }`;
 
-export const CloseIcon = styled.div`
-  color: #fff;
+export const CloseIcon = styled(FaTimes)`
+  color: #fff
 `;
 
 export const Icon = styled.div`
@@ -36,16 +37,16 @@ export const SliderWrapper = styled.div`
   color: #fff;
 `;
 
-export const SliderMenu  = styled.ul`
-display: grid;
-grid-template-columns: ltr;
-text-align: center;
-grid-template-row: repeat(6,80px);
+export const SliderMenu = styled.ul`
+  display: grid;
+  grid-template-columns: ltr;
+  text-align: center;
+  grid-template-row: repeat(6, 80px);
 
-@media screen and (max-width: 480px) {
-grid-template-rows: repeat(6,60px)
-} 
-`
+  @media screen and (max-width: 480px) {
+    grid-template-rows: repeat(6, 60px);
+  }
+`;
 
 export const SliderLink = styled(LinkS)`
   display: flex;
