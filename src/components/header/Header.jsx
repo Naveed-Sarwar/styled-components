@@ -11,13 +11,13 @@ import {
   NavBtnLink
 } from "./HeaderStyled";
 import { FaBars } from "react-icons/fa";
-const Header = () => {
+const Header = ({toggle}) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">dolla</NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>

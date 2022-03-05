@@ -3,7 +3,7 @@ import { FaTimes } from "react-icons/fa";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
-export const SliderContainer = styled.aside`
+export const SidebarContainer = styled.aside`
 position: fixed;
 z-index: 999;
 width: 100%;
@@ -33,11 +33,11 @@ export const Icon = styled.div`
   outline: none;
 `;
 
-export const SliderWrapper = styled.div`
+export const SidebarWrapper = styled.div`
   color: #fff;
 `;
 
-export const SliderMenu = styled.ul`
+export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: ltr;
   text-align: center;
@@ -48,7 +48,7 @@ export const SliderMenu = styled.ul`
   }
 `;
 
-export const SliderLink = styled(LinkS)`
+export const SidebarLink = styled(LinkS)`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,11 +66,11 @@ export const SliderLink = styled(LinkS)`
   }
 `;
 
-export const SliderWrap = styled.div`
+export const SidebarWrap = styled.div`
   display: flex;
   justify-content: center;
 `;
-export const SliderRoute = styled(LinkR)`
+export const SidebarRoute = styled(LinkR)`
   border-radius: 50px;
   background: #01bf71;
   white-space: nowrap;
