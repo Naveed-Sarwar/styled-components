@@ -1,14 +1,10 @@
 import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Header from './components/header/Header';
-import Slider from './components/slider/Slider';
+import Routing from './routing/Routing';
 function App() {
   return (
-    <Router>
-      <Slider />
-      <Header />
-    </Router>
-  );
+    <div>
+     <Routing/>
+</div>  );
 }
 
 export default App;
