@@ -21,7 +21,7 @@ export const HomeBackground = styled.div`
   overflow: hidden;
 `;
 
-export const Video = styled.video`
+export const VideoBackground = styled.video`
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
