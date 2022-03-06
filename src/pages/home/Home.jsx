@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { HomeBackground,HomeContainer,Video } from './HomeStyled';
 const Home = () => {
   return (
     <HomeContainer>
