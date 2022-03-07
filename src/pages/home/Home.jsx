@@ -22,9 +22,21 @@ import {
   Column1,
   Column2,
   TextWrapper,
-  BtnWrap
+  BtnWrap,
 } from "./HomeStyled";
-const Home = ({lightBg,id,imgStart,topLine,headline,darkText,img,alt,description,buttonLable,}) => {
+const Home = ({
+  lightBg,
+  id,
+  imgStart,
+  topLine,
+  headline,
+  darkText,
+  Img,
+  alt,
+  description,
+  buttonLable,
+  lightText
+}) => {
   const [hover, setHover] = useState(false);
   const onHover = () => {
     setHover(!hover);
@@ -58,18 +70,20 @@ const Home = ({lightBg,id,imgStart,topLine,headline,darkText,img,alt,description
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1>
-            <TextWrapper>
-              <TopLine>{topLine}</TopLine>
-              <Heading lightText={lightText}>{headline}</Heading>
-              <Subtitle darkText={darkText}>{description}</Subtitle>
-              <BtnWrap>
-                <Button to="home">{buttonLable}</Button>
-              </BtnWrap>
+              <TextWrapper>
+                <TopLine>{topLine}</TopLine>
+                <Heading lightText={lightText}>{headline}</Heading>
+                <Subtitle darkText={darkText}>{description}</Subtitle>
+                <BtnWrap>
+                  <Button to="home">{buttonLable}</Button>
+                </BtnWrap>
               </TextWrapper>
-              </Column1>
-              <Column2>
+            </Column1>
+            <Column2>
               <ImgWrap>
-              <Img  src={img } alt={alt}/></ImgWrap></Column2>
+                <Img src={Img} alt={alt} />
+              </ImgWrap>
+            </Column2>
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>
