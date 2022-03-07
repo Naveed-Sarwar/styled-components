@@ -8,10 +8,10 @@ import {
   NavItem,
   NavLinks,
   NavBtn,
-  NavBtnLink
+  NavBtnLink,
 } from "./HeaderStyled";
 import { FaBars } from "react-icons/fa";
-const Header = ({toggle}) => {
+const Header = ({ toggle }) => {
   return (
     <>
       <Nav>
@@ -27,11 +27,12 @@ const Header = ({toggle}) => {
               <NavLinks to="services">Services</NavLinks>
               <NavLinks to="signup">Sign Up</NavLinks>
             </NavItem>
+         
           </NavMenu>
           <NavBtn>
-             <NavBtnLink to ="/signin">Sign in</NavBtnLink>
-          </NavBtn> 
-        </NavbarContainer>
+              <NavBtnLink to="/signin">Sign in</NavBtnLink>
+            </NavBtn>
+            </NavbarContainer>
       </Nav>
     </>
   );
