@@ -31,10 +31,10 @@ const Home = ({
   topLine,
   headline,
   darkText,
-  Img,
+  img,
   alt,
   description,
-  buttonLable,
+  buttonLabel,
   lightText
 }) => {
   const [hover, setHover] = useState(false);
@@ -75,13 +75,13 @@ const Home = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button to="home">{buttonLable}</Button>
+                  <Button to="home">{buttonLabel}</Button>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img src={Img} alt={alt} />
+                <Img src={img} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>

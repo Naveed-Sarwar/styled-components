@@ -100,8 +100,9 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "010606")} @media screen
-    and (max-width: 768px) {
+  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "010606")}; 
+  
+  @media screen and (max-width: 768px) {
     padding: 100px 0;
   }
 `;
@@ -120,8 +121,8 @@ export const InfoRow = styled.div`
   display: grid;
   grid-auto-column: minmax(auto, ltr);
   align-items: center;
-  grid-template-areas:
-    ${({ imgStart }) => (imgStart ? `'col2 col1'` : `'col1 col2'`)}
+  grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
+    
     @media screen and (max-width: 768px) {
     grid-templates-areas: ${({ imgStart }) =>
       imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
@@ -156,7 +157,7 @@ export const TopLine = styled.p`
 export const Heading = styled.h1`
   margin-bottom: 24px;
   font-size: 48px;
-  line-height: 1.1;
+  line-height: 1.1rem;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "010606")};
 
@@ -166,14 +167,14 @@ export const Heading = styled.h1`
 `;
 export const Subtitle = styled.p`
 mx-width: 440px;
-margin-bottom: 35pxl
+margin-bottom: 35px;
 font-size: 18px;
 line-height: 24px;
 color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
 export const BtnWrap = styled.div`
 display: flex;
-justify: content: flex-start;
+justify-content: flex-start;
 `;
 export const ImgWrap = styled.div`
   max-width: 555px;
