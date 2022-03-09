@@ -9,7 +9,7 @@ export const homeObjOne = {
     "Get access To our exclusive app that allows you to send unlimited money",
   buttonLabel: "Get Started",
   imgStart: false,
-  img: require('../../assets/pictures/imgOne.svg'),
+  img: require("../../assets/pictures/imgOne.svg"),
   alt: "Car",
   dark: true,
   primary: true,

@@ -35,7 +35,7 @@ const Home = ({
   alt,
   description,
   buttonLabel,
-  lightText
+  lightText,
 }) => {
   const [hover, setHover] = useState(false);
   const onHover = () => {
@@ -66,7 +66,7 @@ const Home = ({
           </HomeBtn>
         </HomeContent>
       </HomeContainer>
-     
+
       <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
