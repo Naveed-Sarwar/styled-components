@@ -100,7 +100,7 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "010606")}; 
+  // background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "010606")}; 
   
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -121,7 +121,7 @@ export const InfoRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, ltr);
   align-items: center;
-  grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
+  // grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
     
     @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
