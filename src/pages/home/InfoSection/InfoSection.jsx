@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../../components/button/ButtonStyled";
+import { Button } from "../../../components/button/ButtonStyled";
 import {
     InfoContainer,
   InfoRow,
@@ -13,7 +13,7 @@ import {
   Column2,
   TextWrapper,
   BtnWrap,
-} from './HomeStyled'
+} from './InfoSectionStyled'
 const InfoSection = ({
     id,
     lightBg,
