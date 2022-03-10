@@ -25,17 +25,20 @@ import {
   BtnWrap,
 } from "./HomeStyled";
 const Home = ({
-  lightBg,
   id,
-  imgStart,
+  lightBg,
   topLine,
+  lightText,
   headLine,
   darkText,
-  img,
-  alt,
   description,
   buttonLabel,
-  lightText
+  imgStart,
+  img,
+  alt,
+  dark,
+  primary,
+  dark2
 }) => {
   const [hover, setHover] = useState(false);
   const onHover = () => {
@@ -66,7 +69,7 @@ const Home = ({
           </HomeBtn>
         </HomeContent>
       </HomeContainer>
-     
+
       <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
@@ -76,7 +79,19 @@ const Home = ({
                 <Heading lightText={lightText}>{headLine}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button to="home">{buttonLabel}</Button>
+                  <Button
+                    to="home"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    primary={primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
+                  >
+                    {buttonLabel}
+                  </Button>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
