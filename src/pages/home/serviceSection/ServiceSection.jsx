@@ -1,10 +1,13 @@
 import React from "react";
+import Icon3 from "../../../assets/pictures/img-3.png";
+import Icon2 from "../../../assets/pictures/img-2.png";
 import Icon1 from "../../../assets/pictures/carImg.png";
 import {
   ServicesContainer,
   ServicesCard,
   ServicesH1,
   ServicesIcon,
+  ServicesH2,
   ServicesP,
   ServicesWrapper,
 } from "./ServiceSectionStyled";
