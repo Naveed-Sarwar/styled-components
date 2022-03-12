@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+// import { BrowserRouter as Router } from "react-router-dom";
 import Header from "../components/header/Header";
 import Sidebar from "../components/slider/Sidebar";
 import Home from "../pages/home/Home";
@@ -14,7 +14,7 @@ function Routing() {
     setIsOpen(!isOpen);
   };
   return (
-    <Router>
+    <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Header toggle={toggle} />
       <Home />
@@ -22,7 +22,7 @@ function Routing() {
       <InfoSection {...homeObjTwo} />
       <ServiceSection />
       <InfoSection {...homeObjThree} />
-      </Router>
+    </>
   );
 }
 

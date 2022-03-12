@@ -21,22 +21,24 @@ const ServiceSection = () => {
           <ServicesH2>Reduce Expenses</ServicesH2>
           <ServicesP>
             We help reduce your fees and increase your overall revenue
-          </ServicesP>{" "}
+          </ServicesP>
         </ServicesCard>
+
         <ServicesCard>
           <ServicesIcon src={Icon2} />
           <ServicesH2>Virtual Offices</ServicesH2>
           <ServicesP>
             you can accesss our platform online anywhere in the world
-          </ServicesP>{" "}
+          </ServicesP>
         </ServicesCard>
+
         <ServicesCard>
           <ServicesIcon src={Icon3} />
           <ServicesH2>Premimum Benefits</ServicesH2>
           <ServicesP>
             Unlock our special membership card that return 5% cash back
-          </ServicesP>{" "}
-        </ServicesCard>{" "}
+          </ServicesP>
+        </ServicesCard>
       </ServicesWrapper>
     </ServicesContainer>
   );

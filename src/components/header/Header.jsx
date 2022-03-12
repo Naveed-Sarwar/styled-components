@@ -27,12 +27,11 @@ const Header = ({ toggle }) => {
               <NavLinks to="services">Services</NavLinks>
               <NavLinks to="signup">Sign Up</NavLinks>
             </NavItem>
-         
           </NavMenu>
           <NavBtn>
-              <NavBtnLink to="/signin">Sign in</NavBtnLink>
-            </NavBtn>
-            </NavbarContainer>
+            <NavBtnLink to="/signin">Sign in</NavBtnLink>
+          </NavBtn>
+        </NavbarContainer>
       </Nav>
     </>
   );
