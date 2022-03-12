@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from "../components/footer/Footer";
 // import { BrowserRouter as Router } from "react-router-dom";
 import Header from "../components/header/Header";
 import Sidebar from "../components/slider/Sidebar";
@@ -22,6 +23,7 @@ function Routing() {
       <InfoSection {...homeObjTwo} />
       <ServiceSection />
       <InfoSection {...homeObjThree} />
+      <Footer />
     </>
   );
 }

@@ -1,9 +1,51 @@
-import React from 'react'
-
+import React from "react";
+import { FooterContainer,FooterWrap,FooterLinksWrapper,FooterLinksContainer,FooterLinkTitle,FooterLinkItems,FooterLink } from "./FooterStyled";
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <FooterContainer>
+      <FooterWrap>
+        <FooterLinksContainer>
+          <FooterLinksWrapper>
+            <FooterLinkItems>
+              <FooterLinkTitle>About Us</FooterLinkTitle>
+<FooterLink  to="/signin">How it work</FooterLink>
+<FooterLink  to="/signin">Testimonials</FooterLink>
+<FooterLink  to="/signin">Careers</FooterLink>
+<FooterLink  to="/signin">Investors</FooterLink>
+<FooterLink  to="/signin">Terms of Services</FooterLink>   
+            </FooterLinkItems>
 
-export default Footer
+            <FooterLinkItems>
+              <FooterLinkTitle>About Us</FooterLinkTitle>
+<FooterLink  to="/signin">How it work</FooterLink>
+<FooterLink  to="/signin">Testimonials</FooterLink>
+<FooterLink  to="/signin">Careers</FooterLink>
+<FooterLink  to="/signin">Investors</FooterLink>
+<FooterLink  to="/signin">Terms of Services</FooterLink>   
+            </FooterLinkItems>
+
+            <FooterLinkItems>
+              <FooterLinkTitle>About Us</FooterLinkTitle>
+<FooterLink  to="/signin">How it work</FooterLink>
+<FooterLink  to="/signin">Testimonials</FooterLink>
+<FooterLink  to="/signin">Careers</FooterLink>
+<FooterLink  to="/signin">Investors</FooterLink>
+<FooterLink  to="/signin">Terms of Services</FooterLink>   
+            </FooterLinkItems>
+
+            <FooterLinkItems>
+              <FooterLinkTitle>About Us</FooterLinkTitle>
+<FooterLink  to="/signin">How it work</FooterLink>
+<FooterLink  to="/signin">Testimonials</FooterLink>
+<FooterLink  to="/signin">Careers</FooterLink>
+<FooterLink  to="/signin">Investors</FooterLink>
+<FooterLink  to="/signin">Terms of Services</FooterLink>   
+            </FooterLinkItems>
+          </FooterLinksWrapper>
+        </FooterLinksContainer>
+      </FooterWrap>
+    </FooterContainer>
+  );
+};
+
+export default Footer;
