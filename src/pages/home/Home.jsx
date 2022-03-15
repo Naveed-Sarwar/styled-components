@@ -19,7 +19,7 @@ const Home = () => {
   };
   return (
     <>
-      <HomeContainer>
+      <HomeContainer id="home">
         <HomeBackground>
           <VideoBackground src={Video} autoPlay loop muted />
         </HomeBackground>
@@ -36,13 +36,17 @@ const Home = () => {
               dark="true"
               onMouseEnter={onHover}
               onMouseLeave={onHover}
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
             >
               Get Started {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
           </HomeBtn>
         </HomeContent>
       </HomeContainer>
-
     </>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "../../../components/button/ButtonStyled";
 import {
-    InfoContainer,
+  InfoContainer,
   InfoRow,
   InfoWrapper,
   Heading,
@@ -13,23 +13,23 @@ import {
   Column2,
   TextWrapper,
   BtnWrap,
-} from './InfoSectionStyled'
+} from "./InfoSectionStyled";
 const InfoSection = ({
-    id,
-    lightBg,
-    topLine,
-    lightText,
-    headLine,
-    darkText,
-    description,
-    buttonLabel,
-    imgStart,
-    img,
-    alt,
-    dark,
-    primary,
-    dark2
-  }) => {
+  id,
+  lightBg,
+  topLine,
+  lightText,
+  headLine,
+  darkText,
+  description,
+  buttonLabel,
+  imgStart,
+  img,
+  alt,
+  dark,
+  primary,
+  dark2,
+}) => {
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
